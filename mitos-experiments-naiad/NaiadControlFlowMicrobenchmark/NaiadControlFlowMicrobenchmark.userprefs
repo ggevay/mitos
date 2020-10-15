@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="NaiadControlFlowMicrobenchmark/NaiadControlFlowMicrobenchmark.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NaiadControlFlowMicrobenchmark/Program.cs">
+    <Files>
+      <File FileName="NaiadControlFlowMicrobenchmark/Program.cs" Line="77" Column="63" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
