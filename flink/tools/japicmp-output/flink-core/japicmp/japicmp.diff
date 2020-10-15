@@ -1,0 +1,124 @@
+Comparing source compatibility of /home/gabor/flink/flink-core/target/flink-core-1.11-SNAPSHOT.jar against /home/gabor/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0.jar
++++  NEW CLASS: PUBLIC(+) FINAL(+) org.apache.flink.api.common.eventtime.Watermark  (compatible)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.io.Serializable
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW FIELD: PUBLIC(+) STATIC(+) FINAL(+) org.apache.flink.api.common.eventtime.Watermark MAX_WATERMARK
+	+++  NEW CONSTRUCTOR: PUBLIC(+) Watermark(long)
+	+++  NEW METHOD: PUBLIC(+) boolean equals(java.lang.Object)
+	+++  NEW METHOD: PUBLIC(+) java.lang.String getFormattedTimestamp()
+	+++  NEW METHOD: PUBLIC(+) long getTimestamp()
+	+++  NEW METHOD: PUBLIC(+) int hashCode()
+	+++  NEW METHOD: PUBLIC(+) java.lang.String toString()
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.common.eventtime.WatermarkOutput  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void emitWatermark(org.apache.flink.api.common.eventtime.Watermark)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void markIdle()
++++  NEW ENUM: PUBLIC(+) FINAL(+) org.apache.flink.api.connector.source.Boundedness  (compatible)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.lang.Comparable
+	+++  NEW INTERFACE: java.io.Serializable
+	+++  NEW SUPERCLASS: java.lang.Enum
+	+++  NEW FIELD: PUBLIC(+) STATIC(+) FINAL(+) org.apache.flink.api.connector.source.Boundedness BOUNDED
+	+++  NEW FIELD: PUBLIC(+) STATIC(+) FINAL(+) org.apache.flink.api.connector.source.Boundedness CONTINUOUS_UNBOUNDED
+	+++  NEW METHOD: PUBLIC(+) STATIC(+) org.apache.flink.api.connector.source.Boundedness valueOf(java.lang.String)
+	+++  NEW METHOD: PUBLIC(+) STATIC(+) org.apache.flink.api.connector.source.Boundedness[] values()
++++  NEW CLASS: PUBLIC(+) FINAL(+) org.apache.flink.api.connector.source.ReaderInfo  (compatible)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.io.Serializable
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW CONSTRUCTOR: PUBLIC(+) ReaderInfo(int, java.lang.String)
+	+++  NEW METHOD: PUBLIC(+) java.lang.String getLocation()
+	+++  NEW METHOD: PUBLIC(+) int getSubtaskId()
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.Source  (compatible)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.io.Serializable
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SplitEnumerator createEnumerator(org.apache.flink.api.connector.source.SplitEnumeratorContext)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SourceReader createReader(org.apache.flink.api.connector.source.SourceReaderContext)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.Boundedness getBoundedness()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.core.io.SimpleVersionedSerializer getEnumeratorCheckpointSerializer()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.core.io.SimpleVersionedSerializer getSplitSerializer()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SplitEnumerator restoreEnumerator(org.apache.flink.api.connector.source.SplitEnumeratorContext, java.lang.Object)
+		+++  NEW EXCEPTION: java.io.IOException
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SourceEvent  (compatible)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.io.Serializable
+	+++  NEW SUPERCLASS: java.lang.Object
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SourceOutput  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: org.apache.flink.api.common.eventtime.WatermarkOutput
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void collect(java.lang.Object)
+		+++  NEW EXCEPTION: java.lang.Exception
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void collect(java.lang.Object, long)
+		+++  NEW EXCEPTION: java.lang.Exception
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SourceReader  (compatible)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.lang.AutoCloseable
+	+++  NEW INTERFACE: java.io.Serializable
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void addSplits(java.util.List)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void handleSourceEvents(org.apache.flink.api.connector.source.SourceEvent)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) java.util.concurrent.CompletableFuture isAvailable()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SourceReader$Status pollNext(org.apache.flink.api.connector.source.SourceOutput)
+		+++  NEW EXCEPTION: java.lang.Exception
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) java.util.List snapshotState()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void start()
++++  NEW ENUM: PUBLIC(+) STATIC(+) FINAL(+) org.apache.flink.api.connector.source.SourceReader$Status  (compatible)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.lang.Comparable
+	+++  NEW INTERFACE: java.io.Serializable
+	+++  NEW SUPERCLASS: java.lang.Enum
+	+++  NEW FIELD: PUBLIC(+) STATIC(+) FINAL(+) org.apache.flink.api.connector.source.SourceReader$Status AVAILABLE_LATER
+	+++  NEW FIELD: PUBLIC(+) STATIC(+) FINAL(+) org.apache.flink.api.connector.source.SourceReader$Status AVAILABLE_NOW
+	+++  NEW FIELD: PUBLIC(+) STATIC(+) FINAL(+) org.apache.flink.api.connector.source.SourceReader$Status FINISHED
+	+++  NEW METHOD: PUBLIC(+) STATIC(+) org.apache.flink.api.connector.source.SourceReader$Status valueOf(java.lang.String)
+	+++  NEW METHOD: PUBLIC(+) STATIC(+) org.apache.flink.api.connector.source.SourceReader$Status[] values()
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SourceReaderContext  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.metrics.MetricGroup metricGroup()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) java.util.concurrent.CompletableFuture sendSourceEventToCoordinator(org.apache.flink.api.connector.source.SourceEvent)
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SourceSplit  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) java.lang.String splitId()
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SplitEnumerator  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.lang.AutoCloseable
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void addReader(int)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void addSplitsBack(java.util.List, int)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void close()
+		+++  NEW EXCEPTION: java.io.IOException
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void handleSourceEvent(int, org.apache.flink.api.connector.source.SourceEvent)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) java.lang.Object snapshotState()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void start()
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.connector.source.SplitEnumeratorContext  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void assignSplits(org.apache.flink.api.connector.source.SplitsAssignment)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void callAsync(java.util.concurrent.Callable, java.util.function.BiConsumer)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void callAsync(java.util.concurrent.Callable, java.util.function.BiConsumer, long, long)
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.metrics.MetricGroup metricGroup()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) int numSubtasks()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) java.util.Map registeredReaders()
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void sendEventToSourceReader(int, org.apache.flink.api.connector.source.SourceEvent)
++++  NEW CLASS: PUBLIC(+) FINAL(+) org.apache.flink.api.connector.source.SplitsAssignment  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW CONSTRUCTOR: PUBLIC(+) SplitsAssignment(java.util.Map)
+	+++  NEW METHOD: PUBLIC(+) java.util.Map assignment()
+	+++  NEW METHOD: PUBLIC(+) java.lang.String toString()
+===  UNCHANGED CLASS: PUBLIC ABSTRACT org.apache.flink.core.fs.FileSystem  (not serializable)
+	***! CLASS FILE FORMAT VERSION: 55.0 <- 52.0
+	===  UNCHANGED METHOD: PUBLIC ABSTRACT org.apache.flink.core.fs.FileSystemKind getKind()
+		+++  NEW ANNOTATION: java.lang.Deprecated
++++  NEW CLASS: PUBLIC(+) FINAL(+) org.apache.flink.util.TemporaryClassLoaderContext  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 55.0 <- -1.-1
+	+++  NEW INTERFACE: java.lang.AutoCloseable
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) void close()
+	+++  NEW METHOD: PUBLIC(+) STATIC(+) org.apache.flink.util.TemporaryClassLoaderContext of(java.lang.ClassLoader)

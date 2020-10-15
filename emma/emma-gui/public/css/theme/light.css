@@ -1,0 +1,143 @@
+/**
+ * Copyright © 2014 TU Berlin (emma@dima.tu-berlin.de)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+@import url("/css/styles/vs.css");
+
+.top-bar {
+    background: #e8e8e8;
+}
+
+.top-bar .name h1 a {
+    color: black;
+}
+
+#tab-wrapper {
+    background-color: #e8e8e8;
+    border: 1px solid black;
+}
+
+.tabs .tab-title {
+    border-bottom: 1px solid #2F74D0;
+}
+
+.tabs .tab-title a {
+    color: #2F74D0;
+}
+
+.tabs .tab-title.active a {
+    background-color: white !important;
+}
+
+.tabs .tab-title a:hover {
+    background-color: white !important;
+}
+
+.title-area.right{
+    position: absolute;
+    right: 0;
+    background: #e8e8e8;
+}
+
+#example-name {
+    color: black;
+}
+
+#code-tabs {
+    background-color: #e8e8e8;
+}
+
+#code-tab-wrapper {
+    border: 1px solid black;
+}
+
+#code-tab-wrapper .tabs-content .content {
+    background-color: #e8e8e8;
+}
+
+#log-wrapper {
+    background-color: #e8e8e8;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#log-container {
+    font: 10pt courier;
+    background-color: #e8e8e8;
+    color: black;
+}
+
+.hljs {
+    background-color: #e8e8e8;
+}
+
+.log-entry {
+    color: #F55B11;
+}
+
+.log-error {
+    color: red;
+}
+
+.text-zoom {
+    font-size: 20px;
+}
+
+a {
+    color: #2F74D0;
+}
+
+a:hover, a:focus{
+    color: black;
+}
+
+.label {
+    background-color: #2F74D0;
+}
+
+.switch input:checked+label {
+    background-color: #2F74D0;
+}
+
+.switch span {
+    color: black;
+}
+
+.gear:before {
+    content: url('/img/gear-blue.gif');
+    display: inline-block;
+    height: 35px;
+    vertical-align: middle;
+}
+
+/* PLAN CANVAS STYLES */
+#plan-node {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: 'Courier New';
+}
+
+#parameter-container label{
+    color: black;
+}
+
+.button {
+    background-color: #2F74D0;
+}
+
+.button:hover, .button:active, .button:focus {
+    background-color: black;
+}

@@ -1,0 +1,3436 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Comparing source compatibility of /home/gabor/flink/flink-core/target/flink-core-1.11-SNAPSHOT.jar against /home/gabor/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0.jar</title>
+        <style type="text/css">
+body {
+    font-family: Verdana;
+}
+.title {
+    font-weight: bold;
+}
+.new {
+    color: green;
+}
+.removed {
+    color: red;
+}
+.modified {
+    color: orange;
+}
+.unchanged {
+    color: black;
+}
+thead tr td {
+    font-weight: bold;
+}
+.toc {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #dcdcdc;
+    padding: 5px;
+    background: #ededed;
+    display: inline-block;
+}
+table {
+    border-collapse: collapse;
+}
+table tr td {
+    border: 1px solid black;
+    padding: 5px;
+}
+table thead {
+    background-color: #dee3e9;
+}
+table tbody tr td.matrix_layout {
+    background-color: #dee3e9;
+    font-weight: bold;
+}
+.class {
+    margin-bottom: 2em;
+    border: 1px solid #dcdcdc;
+    padding: 5px;
+    background: #ededed;
+    display: inline-block;
+}
+.class_compatibilityChanges {
+	margin-top: 1em;
+}
+
+.class_fileFormatVersion {
+	margin-top: 1em;
+}
+.class_superclass {
+    margin-top: 1em;
+}
+.class_interfaces {
+    margin-top: 1em;
+}
+.class_fields {
+    margin-top: 1em;
+}
+.class_serialVersionUid {
+    margin-top: 1em;
+}
+.class_constructors {
+    margin-top: 1em;
+}
+.class_methods {
+    margin-top: 1em;
+}
+.class_annotations {
+    margin-top: 1em;
+}
+.label {
+    font-weight: bold;
+}
+.label_class_member {
+    background-color: #4d7a97;
+    display: inline-block;
+    padding: 5px;
+}
+.toc_link {
+    margin-left: 10px;
+    font-size: 0.5em;
+}
+.modifier {
+    font-style: italic;
+}
+.method_return_type {
+
+}
+ul {
+    list-style-type: none;
+    padding: 0px 0px;
+}
+.meta-information {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #ededed;
+    display: inline-block;
+}
+.warnings {
+    margin-top: 1em;
+    font-size: 0.75em;
+}
+.explanations {
+	margin-bottom: 2em;
+}
+
+</style>
+    </head>
+    <body>
+        <span class="title">Comparing source compatibility of /home/gabor/flink/flink-core/target/flink-core-1.11-SNAPSHOT.jar against /home/gabor/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0.jar</span>
+        <br>
+        <div class="meta-information">
+            <table>
+                <tr>
+                    <td>Old:</td><td>/home/gabor/.m2/repository/org/apache/flink/flink-core/1.10.0/flink-core-1.10.0.jar</td>
+                </tr>
+                <tr>
+                    <td>New:</td><td>/home/gabor/flink/flink-core/target/flink-core-1.11-SNAPSHOT.jar</td>
+                </tr>
+                <tr>
+                    <td>Created:</td><td>2020-04-09T11:22:33.950+0200</td>
+                </tr>
+                <tr>
+                    <td>Access modifier filter:</td><td>PUBLIC</td>
+                </tr>
+                <tr>
+                    <td>Only modifications:</td><td>true</td>
+                </tr>
+                <tr>
+                    <td>Only binary incompatible modifications:</td><td>false</td>
+                </tr>
+                <tr>
+                    <td>Ignore missing classes:</td><td>false</td>
+                </tr>
+                <tr>
+                    <td>Includes:</td><td>@org.apache.flink.annotation.Public;@org.apache.flink.annotation.Public;@org.apache.flink.annotation.Public;@org.apache.flink.annotation.Public;@org.apache.flink.annotation.Public</td>
+                </tr>
+                <tr>
+                    <td>Excludes:</td><td>@org.apache.flink.annotation.PublicEvolving;@org.apache.flink.annotation.PublicEvolving;@org.apache.flink.annotation.PublicEvolving;@org.apache.flink.annotation.PublicEvolving;@org.apache.flink.annotation.PublicEvolving;@org.apache.flink.annotation.Internal;@org.apache.flink.annotation.Internal;@org.apache.flink.annotation.Internal;@org.apache.flink.annotation.Internal;@org.apache.flink.annotation.Internal;org.apache.flink.streaming.api.datastream.DataStream#DataStream(org.apache.flink.streaming.api.environment.StreamExecutionEnvironment,org.apache.flink.streaming.api.transformations.StreamTransformation);org.apache.flink.streaming.api.environment.LegacyLocalStreamEnvironment;org.apache.flink.streaming.api.environment.LegacyLocalStreamEnvironment;org.apache.flink.streaming.api.functions.sink.RichSinkFunction#invoke(java.lang.Object);org.apache.flink.streaming.api.functions.sink.SinkFunction;org.apache.flink.streaming.api.functions.sink.SinkFunction;org.apache.flink.api.java.hadoop.mapred.HadoopInputFormat;org.apache.flink.api.java.hadoop.mapred.HadoopInputFormat;org.apache.flink.api.java.hadoop.mapred.HadoopOutputFormat;org.apache.flink.api.java.hadoop.mapred.HadoopOutputFormat;org.apache.flink.api.java.hadoop.mapreduce.HadoopInputFormat;org.apache.flink.api.java.hadoop.mapreduce.HadoopInputFormat;org.apache.flink.api.java.hadoop.mapreduce.HadoopOutputFormat;org.apache.flink.api.java.hadoop.mapreduce.HadoopOutputFormat;org.apache.flink.api.scala.hadoop.mapred.HadoopInputFormat;org.apache.flink.api.scala.hadoop.mapred.HadoopInputFormat;org.apache.flink.api.scala.hadoop.mapred.HadoopOutputFormat;org.apache.flink.api.scala.hadoop.mapred.HadoopOutputFormat;org.apache.flink.api.scala.hadoop.mapreduce.HadoopInputFormat;org.apache.flink.api.scala.hadoop.mapreduce.HadoopInputFormat;org.apache.flink.api.scala.hadoop.mapreduce.HadoopOutputFormat;org.apache.flink.api.scala.hadoop.mapreduce.HadoopOutputFormat;org.apache.flink.api.common.ExecutionConfig#CONFIG_KEY;org.apache.flink.core.fs.FileSystem\$FSKey;org.apache.flink.core.fs.FileSystem\$FSKey;org.apache.flink.core.fs.FileSystem#initialize(java.net.URI);org.apache.flink.core.fs.FileSystem#isFlinkSupportedScheme(java.lang.String);org.apache.flink.core.fs.FileSystem#setDefaultScheme(org.apache.flink.configuration.Configuration);org.apache.flink.api.java.typeutils.WritableTypeInfo;org.apache.flink.api.java.typeutils.WritableTypeInfo;org.apache.flink.api.java.typeutils.AvroTypeInfo;org.apache.flink.api.java.typeutils.AvroTypeInfo;org.apache.flink.configuration.ConfigConstants#DEFAULT_NETWORK_REQUEST_BACKOFF_INITIAL;org.apache.flink.configuration.ConfigConstants#DEFAULT_NETWORK_REQUEST_BACKOFF_MAX;org.apache.flink.configuration.ConfigConstants#DEFAULT_TASK_CANCELLATION_TIMEOUT_MILLIS;org.apache.flink.configuration.ConfigConstants#ENABLE_QUARANTINE_MONITOR;org.apache.flink.configuration.ConfigConstants#NETWORK_REQUEST_BACKOFF_INITIAL_KEY;org.apache.flink.configuration.ConfigConstants#NETWORK_REQUEST_BACKOFF_MAX_KEY;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_WATCH_THRESHOLD;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_WATCH_THRESHOLD;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_DISPATCHER_THROUGHPUT;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_DISPATCHER_THROUGHPUT;org.apache.flink.configuration.ConfigConstants.DEFAULT_SECURITY_SSL_VERIFY_HOSTNAME;org.apache.flink.configuration.ConfigConstants.DEFAULT_SECURITY_SSL_VERIFY_HOSTNAME;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_LOOKUP_TIMEOUT;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_LOOKUP_TIMEOUT;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_TRANSPORT_HEARTBEAT_INTERVAL;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_TRANSPORT_HEARTBEAT_INTERVAL;org.apache.flink.configuration.ConfigConstants.DEFAULT_RECOVERY_MODE;org.apache.flink.configuration.ConfigConstants.DEFAULT_RECOVERY_MODE;org.apache.flink.configuration.ConfigConstants.DEFAULT_SECURITY_SSL_ENABLED;org.apache.flink.configuration.ConfigConstants.DEFAULT_SECURITY_SSL_ENABLED;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_CLIENT_TIMEOUT;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_CLIENT_TIMEOUT;org.apache.flink.configuration.ConfigConstants.DEFAULT_STATE_BACKEND;org.apache.flink.configuration.ConfigConstants.DEFAULT_STATE_BACKEND;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_ASK_TIMEOUT;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_ASK_TIMEOUT;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_TRANSPORT_THRESHOLD;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_TRANSPORT_THRESHOLD;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_FRAMESIZE;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_FRAMESIZE;org.apache.flink.configuration.ConfigConstants.DEFAULT_SECURITY_SSL_PROTOCOL;org.apache.flink.configuration.ConfigConstants.DEFAULT_SECURITY_SSL_PROTOCOL;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_LOG_LIFECYCLE_EVENTS;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_LOG_LIFECYCLE_EVENTS;org.apache.flink.configuration.ConfigConstants.DEFAULT_SECURITY_SSL_ALGORITHMS;org.apache.flink.configuration.ConfigConstants.DEFAULT_SECURITY_SSL_ALGORITHMS;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_TRANSPORT_HEARTBEAT_PAUSE;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_TRANSPORT_HEARTBEAT_PAUSE;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_SSL_ENABLED;org.apache.flink.configuration.ConfigConstants.DEFAULT_AKKA_SSL_ENABLED;org.apache.flink.api.common.serialization.DeserializationSchema;org.apache.flink.api.common.serialization.DeserializationSchema;org.apache.flink.api.common.serialization.SerializationSchema;org.apache.flink.api.common.serialization.SerializationSchema;org.apache.flink.api.common.typeinfo.TypeHint;org.apache.flink.api.common.typeinfo.TypeHint;org.apache.flink.api.java.typeutils.TypeInfoParser;org.apache.flink.api.java.typeutils.TypeInfoParser</td>
+                </tr>
+                <tr>
+                    <td>Semantic Versioning:</td><td>0.1.0</td>
+                </tr>
+            </table>
+        </div>
+        <ul>
+            <li>
+                <a href="#toc">Classes</a>
+            </li>
+        </ul>
+            
+        <div class="toc">
+            <a name="toc"></a><span class="label">Classes:</span>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Status</td><td>Fully Qualified Name</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.common.eventtime.Watermark">org.apache.flink.api.common.eventtime.Watermark</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.common.eventtime.WatermarkOutput">org.apache.flink.api.common.eventtime.WatermarkOutput</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.Boundedness">org.apache.flink.api.connector.source.Boundedness</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.ReaderInfo">org.apache.flink.api.connector.source.ReaderInfo</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.Source">org.apache.flink.api.connector.source.Source</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SourceEvent">org.apache.flink.api.connector.source.SourceEvent</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SourceOutput">org.apache.flink.api.connector.source.SourceOutput</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SourceReader">org.apache.flink.api.connector.source.SourceReader</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SourceReader$Status">org.apache.flink.api.connector.source.SourceReader$Status</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SourceReaderContext">org.apache.flink.api.connector.source.SourceReaderContext</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SourceSplit">org.apache.flink.api.connector.source.SourceSplit</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SplitEnumerator">org.apache.flink.api.connector.source.SplitEnumerator</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SplitEnumeratorContext">org.apache.flink.api.connector.source.SplitEnumeratorContext</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.api.connector.source.SplitsAssignment">org.apache.flink.api.connector.source.SplitsAssignment</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						unchanged
+					">UNCHANGED</span></td><td><a href="#org.apache.flink.core.fs.FileSystem">org.apache.flink.core.fs.FileSystem</a></td>
+                    </tr>
+                    <tr>
+                        <td><span class="
+						new
+					">NEW</span></td><td><a href="#org.apache.flink.util.TemporaryClassLoaderContext">org.apache.flink.util.TemporaryClassLoaderContext</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="explanations">
+            <span>
+				Binary incompatible changes are marked with (!) while source incompatible changes are marked with (*).
+			</span>
+        </div>
+        <div>
+            <div>
+                <div class="class" id="org.apache.flink.api.common.eventtime.Watermark">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.common.eventtime.Watermark"></a><span class="
+						new
+					">NEW</span><span class="
+						new
+					">
+					(Serializable compatible)&nbsp;
+				</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">class</span>&nbsp;
+						org.apache.flink.api.common.eventtime.Watermark</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.Serializable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_serialVersionUid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td><td>Serializable</td><td>default serialVersionUID</td><td>serialVersionUID in class</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="matrix_layout">Old</td><td class="
+												modified
+											">false</td><td class="
+												modified
+											">n.a.</td><td class="
+												modified
+											">n.a.</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix_layout">New</td><td class="
+												modified
+											">true</td><td class="
+												modified
+											">-6443072602836473561</td><td class="
+												modified
+											">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields">
+                        <span class="label_class_member">Fields:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new modifier
+					">org.apache.flink.api.common.eventtime.Watermark</span></td><td>
+			n.a.
+		</td><td>MAX_WATERMARK</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_constructors">
+                        <span class="label_class_member">Constructors:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Constructor</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td>Watermark(long)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>68</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">boolean</span></td><td>equals(java.lang.Object)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>91</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.lang.String</span></td><td>getFormattedTimestamp()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>84</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">long</span></td><td>getTimestamp()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>76</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">int</span></td><td>hashCode()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>99</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.lang.String</span></td><td>toString()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>104</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.common.eventtime.WatermarkOutput">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.common.eventtime.WatermarkOutput"></a><span class="
+						new
+					">NEW</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.common.eventtime.WatermarkOutput</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces"></div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>emitWatermark(org.apache.flink.api.common.eventtime.Watermark)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>markIdle()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.Boundedness">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.Boundedness"></a><span class="
+						new
+					">NEW</span><span class="
+						new
+					">
+					(Serializable compatible)&nbsp;
+				</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">enum</span>&nbsp;
+						org.apache.flink.api.connector.source.Boundedness</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass">
+                        <span class="label_class_member">Superclass:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Superclass</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.Enum</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.Serializable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.Comparable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_serialVersionUid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td><td>Serializable</td><td>default serialVersionUID</td><td>serialVersionUID in class</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="matrix_layout">Old</td><td class="
+												modified
+											">false</td><td class="
+												modified
+											">n.a.</td><td>n.a.</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix_layout">New</td><td class="
+												modified
+											">true</td><td class="
+												modified
+											">-5847681221456525218</td><td>n.a.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields">
+                        <span class="label_class_member">Fields:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new modifier
+					">org.apache.flink.api.connector.source.Boundedness</span></td><td>
+			n.a.
+		</td><td>BOUNDED</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new modifier
+					">org.apache.flink.api.connector.source.Boundedness</span></td><td>
+			n.a.
+		</td><td>CONTINUOUS_UNBOUNDED</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.Boundedness</span></td><td>valueOf(java.lang.String)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>27</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.Boundedness[]</span></td><td>values()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>27</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.ReaderInfo">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.ReaderInfo"></a><span class="
+						new
+					">NEW</span><span class="
+						new
+					">
+					(Serializable compatible)&nbsp;
+				</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">class</span>&nbsp;
+						org.apache.flink.api.connector.source.ReaderInfo</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.Serializable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_serialVersionUid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td><td>Serializable</td><td>default serialVersionUID</td><td>serialVersionUID in class</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="matrix_layout">Old</td><td class="
+												modified
+											">false</td><td class="
+												modified
+											">n.a.</td><td>n.a.</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix_layout">New</td><td class="
+												modified
+											">true</td><td class="
+												modified
+											">6340047756147769640</td><td>n.a.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors">
+                        <span class="label_class_member">Constructors:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Constructor</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td>ReaderInfo(int,
+					
+                                        <wbr></wbr>
+                                        java.lang.String)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>33</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.lang.String</span></td><td>getLocation()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>49</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">int</span></td><td>getSubtaskId()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>42</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.Source">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.Source"></a><span class="
+						new
+					">NEW</span><span class="
+						new
+					">
+					(Serializable compatible)&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.connector.source.Source</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.Serializable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_serialVersionUid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td><td>Serializable</td><td>default serialVersionUID</td><td>serialVersionUID in class</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="matrix_layout">Old</td><td class="
+												modified
+											">false</td><td class="
+												modified
+											">n.a.</td><td>n.a.</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix_layout">New</td><td class="
+												modified
+											">true</td><td class="
+												modified
+											">3144555573555706803</td><td>n.a.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.SplitEnumerator</span></td><td>createEnumerator(org.apache.flink.api.connector.source.SplitEnumeratorContext)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.SourceReader</span></td><td>createReader(org.apache.flink.api.connector.source.SourceReaderContext)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.Boundedness</span></td><td>getBoundedness()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.core.io.SimpleVersionedSerializer</span></td><td>getEnumeratorCheckpointSerializer()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.core.io.SimpleVersionedSerializer</span></td><td>getSplitSerializer()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.SplitEnumerator</span></td><td>restoreEnumerator(org.apache.flink.api.connector.source.SplitEnumeratorContext,
+					
+                                        <wbr></wbr>
+                                        java.lang.Object)
+				</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Status:</td><td>Name:</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.IOException</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SourceEvent">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SourceEvent"></a><span class="
+						new
+					">NEW</span><span class="
+						new
+					">
+					(Serializable compatible)&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.connector.source.SourceEvent</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.Serializable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_serialVersionUid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td><td>Serializable</td><td>default serialVersionUID</td><td>serialVersionUID in class</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="matrix_layout">Old</td><td class="
+												modified
+											">false</td><td class="
+												modified
+											">n.a.</td><td>n.a.</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix_layout">New</td><td class="
+												modified
+											">true</td><td class="
+												modified
+											">-8984284844694744632</td><td>n.a.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods"></div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SourceOutput">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SourceOutput"></a><span class="
+						new
+					">NEW</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.connector.source.SourceOutput</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_compatibilityChanges">
+                        <span class="label_class_member">Compatibility Changes:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Change</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>INTERFACE_ADDED</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>org.apache.flink.api.common.eventtime.WatermarkOutput</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>collect(java.lang.Object)
+				</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Status:</td><td>Name:</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.Exception</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>collect(java.lang.Object,
+					
+                                        <wbr></wbr>
+                                        long)
+				</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Status:</td><td>Name:</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.Exception</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SourceReader">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SourceReader"></a><span class="
+						new
+					">NEW</span><span class="
+						new
+					">
+					(Serializable compatible)&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.connector.source.SourceReader</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.Serializable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.AutoCloseable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_serialVersionUid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td><td>Serializable</td><td>default serialVersionUID</td><td>serialVersionUID in class</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="matrix_layout">Old</td><td class="
+												modified
+											">false</td><td class="
+												modified
+											">n.a.</td><td>n.a.</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix_layout">New</td><td class="
+												modified
+											">true</td><td class="
+												modified
+											">8436717508143189933</td><td>n.a.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>addSplits(java.util.List)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>handleSourceEvents(org.apache.flink.api.connector.source.SourceEvent)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.util.concurrent.CompletableFuture</span></td><td>isAvailable()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.SourceReader$Status</span></td><td>pollNext(org.apache.flink.api.connector.source.SourceOutput)
+				</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Status:</td><td>Name:</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.Exception</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.util.List</span></td><td>snapshotState()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>start()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SourceReader$Status">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SourceReader$Status"></a><span class="
+						new
+					">NEW</span><span class="
+						new
+					">
+					(Serializable compatible)&nbsp;
+				</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">enum</span>&nbsp;
+						org.apache.flink.api.connector.source.SourceReader$Status</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass">
+                        <span class="label_class_member">Superclass:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Superclass</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.Enum</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.Serializable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.Comparable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_serialVersionUid">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td></td><td>Serializable</td><td>default serialVersionUID</td><td>serialVersionUID in class</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="matrix_layout">Old</td><td class="
+												modified
+											">false</td><td class="
+												modified
+											">n.a.</td><td>n.a.</td>
+                                </tr>
+                                <tr>
+                                    <td class="matrix_layout">New</td><td class="
+												modified
+											">true</td><td class="
+												modified
+											">-9193978168831562405</td><td>n.a.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields">
+                        <span class="label_class_member">Fields:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Field</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new modifier
+					">org.apache.flink.api.connector.source.SourceReader$Status</span></td><td>
+			n.a.
+		</td><td>AVAILABLE_LATER</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new modifier
+					">org.apache.flink.api.connector.source.SourceReader$Status</span></td><td>
+			n.a.
+		</td><td>AVAILABLE_NOW</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new modifier
+					">org.apache.flink.api.connector.source.SourceReader$Status</span></td><td>
+			n.a.
+		</td><td>FINISHED</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.SourceReader$Status</span></td><td>valueOf(java.lang.String)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>85</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.api.connector.source.SourceReader$Status[]</span></td><td>values()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>85</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SourceReaderContext">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SourceReaderContext"></a><span class="
+						new
+					">NEW</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.connector.source.SourceReaderContext</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces"></div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.metrics.MetricGroup</span></td><td>metricGroup()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.util.concurrent.CompletableFuture</span></td><td>sendSourceEventToCoordinator(org.apache.flink.api.connector.source.SourceEvent)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SourceSplit">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SourceSplit"></a><span class="
+						new
+					">NEW</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.connector.source.SourceSplit</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces"></div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.lang.String</span></td><td>splitId()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SplitEnumerator">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SplitEnumerator"></a><span class="
+						new
+					">NEW</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.connector.source.SplitEnumerator</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.AutoCloseable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>addReader(int)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>addSplitsBack(java.util.List,
+					
+                                        <wbr></wbr>
+                                        int)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>close()
+				</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Status:</td><td>Name:</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="
+						new
+					">NEW</span></td><td>java.io.IOException</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>handleSourceEvent(int,
+					
+                                        <wbr></wbr>
+                                        org.apache.flink.api.connector.source.SourceEvent)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.lang.Object</span></td><td>snapshotState()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>start()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SplitEnumeratorContext">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SplitEnumeratorContext"></a><span class="
+						new
+					">NEW</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">interface</span>&nbsp;
+						org.apache.flink.api.connector.source.SplitEnumeratorContext</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces"></div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>assignSplits(org.apache.flink.api.connector.source.SplitsAssignment)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>callAsync(java.util.concurrent.Callable,
+					
+                                        <wbr></wbr>
+                                        java.util.function.BiConsumer)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>callAsync(java.util.concurrent.Callable,
+					
+                                        <wbr></wbr>
+                                        java.util.function.BiConsumer,
+					
+                                        <wbr></wbr>
+                                        long,
+					
+                                        <wbr></wbr>
+                                        long)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.metrics.MetricGroup</span></td><td>metricGroup()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">int</span></td><td>numSubtasks()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.util.Map</span></td><td>registeredReaders()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						">abstract&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>sendEventToSourceReader(int,
+					
+                                        <wbr></wbr>
+                                        org.apache.flink.api.connector.source.SourceEvent)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.api.connector.source.SplitsAssignment">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.api.connector.source.SplitsAssignment"></a><span class="
+						new
+					">NEW</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">class</span>&nbsp;
+						org.apache.flink.api.connector.source.SplitsAssignment</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces"></div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors">
+                        <span class="label_class_member">Constructors:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Constructor</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td>SplitsAssignment(java.util.Map)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>36</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.util.Map</span></td><td>assignment()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>44</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">java.lang.String</span></td><td>toString()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>49</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.core.fs.FileSystem">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.core.fs.FileSystem"></a><span class="
+						unchanged
+					">UNCHANGED</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+						unchanged
+					">class</span>&nbsp;
+						org.apache.flink.core.fs.FileSystem</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_fileFormatVersion">
+                        <span class="label_class_member">class File Format Version:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Old Version</td><td>New Version</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						modified
+					">MODIFIED</span></td><td>52.0</td><td>55.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces"></div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						unchanged
+					">UNCHANGED</span></td><td><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						">public&nbsp;</span><span class="
+							unchanged modifier
+						">abstract&nbsp;</span><span class="
+							unchanged modifier
+						"></span><span class="
+							unchanged modifier
+						"></span></td><td><span class="
+						unchanged method_return_type
+					">org.apache.flink.core.fs.FileSystemKind</span></td><td>getKind()
+				
+                                        <div class="class_annotations">
+                                            <span class="label_class_member">Annotations:</span>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <td>Status:</td><td>Fully Qualified Name:</td><td>Elements:</td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="
+						new
+					">NEW</span></td><td>java.lang.Deprecated</td><td>n.a.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>n.a.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="class" id="org.apache.flink.util.TemporaryClassLoaderContext">
+                    <div class="class_header">
+                        <span class="label"><a name="org.apache.flink.util.TemporaryClassLoaderContext"></a><span class="
+						new
+					">NEW</span><span class="
+					">
+					&nbsp;
+				</span><span class="
+							new modifier
+						">final&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+						new
+					">class</span>&nbsp;
+						org.apache.flink.util.TemporaryClassLoaderContext</span><a href="#toc" class="toc_link">top</a>
+                    </div>
+                    <div class="class_superclass"></div>
+                    <div class="class_interfaces">
+                        <span class="label_class_member">Interfaces:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Interface</td><td>Compatibility Changes:</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td>java.lang.AutoCloseable</td><td>
+			n.a.
+		</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="class_fields"></div>
+                    <div class="class_constructors"></div>
+                    <div class="class_methods">
+                        <span class="label_class_member">Methods:</span>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Status</td><td>Modifier</td><td>Type</td><td>Method</td><td>Exceptions</td><td>Compatibility Changes:</td><td>Line Number</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">void</span></td><td>close()
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>83</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="
+						new
+					">NEW</span></td><td><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						">static&nbsp;</span><span class="
+							new modifier
+						">public&nbsp;</span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span><span class="
+							new modifier
+						"></span></td><td><span class="
+						new method_return_type
+					">org.apache.flink.util.TemporaryClassLoaderContext</span></td><td>of(java.lang.ClassLoader)
+				</td><td>n.a.</td><td>
+			n.a.
+		</td><td>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <td>Old file</td><td>New file</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>n.a.</td><td>62</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,121 @@
+/**
+ * Copyright © 2014 TU Berlin (emma@dima.tu-berlin.de)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/*
+
+Pojoaque Style by Jason Tate
+http://web-cms-designs.com/ftopict-10-pojoaque-style-for-highlight-js-code-highlighter.html
+Based on Solarized Style from http://ethanschoonover.com/solarized
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #dccf8f;
+  background: url(./pojoaque.jpg) repeat scroll left top #181914;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.diff .hljs-header,
+.hljs-doctype,
+.lisp .hljs-string {
+  color: #586e75;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.javascript .hljs-title,
+.method,
+.hljs-addition,
+.css .hljs-tag,
+.hljs-list .hljs-keyword,
+.nginx .hljs-title {
+  color: #b64926;
+}
+
+.hljs-number,
+.hljs-command,
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-doctag,
+.tex .hljs-formula,
+.hljs-regexp,
+.hljs-hexcolor {
+  color: #468966;
+}
+
+.hljs-title,
+.hljs-localvars,
+.hljs-function .hljs-title,
+.hljs-chunk,
+.hljs-decorator,
+.hljs-built_in,
+.hljs-identifier,
+.hljs-name,
+.hljs-id {
+  color: #ffb03b;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body,
+.smalltalk .hljs-number,
+.hljs-constant,
+.hljs-class .hljs-title,
+.hljs-parent,
+.hljs-type {
+  color: #b58900;
+}
+
+.css .hljs-attribute {
+  color: #b89859;
+}
+
+.css .hljs-number,
+.css .hljs-hexcolor {
+  color: #dccf8f;
+}
+
+.css .hljs-class {
+  color: #d3a60c;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-shebang,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.diff .hljs-change,
+.hljs-special,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-subst,
+.hljs-cdata {
+  color: #cb4b16;
+}
+
+.hljs-deletion {
+  color: #dc322f;
+}
+
+.tex .hljs-formula {
+  background: #073642;
+}
