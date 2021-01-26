@@ -22,37 +22,47 @@ import org.apache.flink.core.memory.DataInputView;
 import org.apache.flink.core.memory.DataOutputView;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 /**
  *
  */
-public final class CFLElement {
+public final class CFLElements {
 
 	public int seqNum;
-	public int bbId;
+	public int[] bbIds;
 
 	public void serialize(DataOutputView target) throws IOException {
 		target.writeInt(seqNum);
-		target.writeInt(bbId);
+
+		target.writeInt(bbIds.length);
+		for (int bbId: bbIds) {
+			target.writeInt(bbId);
+		}
 	}
 
-	public static void deserialize(CFLElement r, DataInputView src) throws IOException {
+	public static void deserialize(CFLElements r, DataInputView src) throws IOException {
 		r.seqNum = src.readInt();
-		r.bbId = src.readInt();
+
+		int bbIdsLength = src.readInt();
+		r.bbIds = new int[bbIdsLength];
+		for (int i=0; i<bbIdsLength; i++) {
+			r.bbIds[i] = src.readInt();
+		}
 	}
 
-	public CFLElement() {}
+	public CFLElements() {}
 
-	public CFLElement(int seqNum, int bbId) {
+	public CFLElements(int seqNum, int[] bbIds) {
 		this.seqNum = seqNum;
-		this.bbId = bbId;
+		this.bbIds = bbIds;
 	}
 
 	@Override
 	public String toString() {
 		return "CFLElement{" +
 				"seqNum=" + seqNum +
-				", bbId=" + bbId +
+				", bbId=" + Arrays.toString(bbIds) +
 				'}';
 	}
 }

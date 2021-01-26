@@ -20,27 +20,25 @@ import org.emmalanguage.mitos.util.Unit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ConditionNodeScala extends SingletonBagOperator<scala.Boolean, Unit> {
+public class ConditionNode extends SingletonBagOperator<Boolean, Unit> {
 
-	protected static final Logger LOG = LoggerFactory.getLogger(ConditionNodeScala.class);
+	protected static final Logger LOG = LoggerFactory.getLogger(ConditionNode.class);
 
 	private final int[] trueBranchBbIds;
 	private final int[] falseBranchBbIds;
-
-	public ConditionNodeScala(int trueBranchBbId, int falseBranchBbId) {
+	
+	public ConditionNode(int trueBranchBbId, int falseBranchBbId) {
 		this(new int[]{trueBranchBbId}, new int[]{falseBranchBbId});
 	}
 
-	public ConditionNodeScala(int[] trueBranchBbIds, int[] falseBranchBbIds) {
+	public ConditionNode(int[] trueBranchBbIds, int[] falseBranchBbIds) {
 		this.trueBranchBbIds = trueBranchBbIds;
 		this.falseBranchBbIds = falseBranchBbIds;
 	}
 
 	@Override
-	public void pushInElement(scala.Boolean e, int logicalInputId) {
+	public void pushInElement(Boolean e, int logicalInputId) {
 		super.pushInElement(e, logicalInputId);
-		for (int b: scala.Boolean.unbox(e) ? trueBranchBbIds : falseBranchBbIds) {
-			out.appendToCfl(b);
-		}
+		out.appendToCfl(e ? trueBranchBbIds : falseBranchBbIds);
 	}
 }

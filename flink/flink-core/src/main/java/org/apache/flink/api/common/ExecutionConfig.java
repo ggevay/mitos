@@ -131,7 +131,12 @@ public class ExecutionConfig implements Serializable, Archiveable<ArchivedExecut
 	/**
 	 * Interval in milliseconds for sending latency tracking marks from the sources to the sinks.
 	 */
-	private long latencyTrackingInterval = 2000L;
+	// Disabled it for Mitos. There were IllegalStateExceptions somewhere around the RecordWriters, and I think the
+	// problem was that the CFLManager could cause an operator to emit something at the same time as it is emitting a
+	// latency marker. Note that for normal elements this cannot happen because those always go through my methods,
+	// which are synchronized.
+	// (Btw. I'm not sure why was this not causing issues on the cluster. I saw issues locally in CFLITCase.)
+	private long latencyTrackingInterval = 0L;
 
 	/**
 	 * @deprecated Should no longer be used because it is subsumed by RestartStrategyConfiguration

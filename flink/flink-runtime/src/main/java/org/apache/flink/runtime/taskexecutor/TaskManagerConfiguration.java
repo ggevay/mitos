@@ -46,6 +46,9 @@ public class TaskManagerConfiguration implements TaskManagerRuntimeInfo {
 	private static final Logger LOG = LoggerFactory.getLogger(TaskManagerConfiguration.class);
 
 	public final boolean cflManDeactivated;
+	public final boolean mitosCheckpointingEnabled;
+	public final int mitosCheckpointInterval;
+	public final String mitosCheckpointDir;
 
 	private final int numberSlots;
 
@@ -77,6 +80,9 @@ public class TaskManagerConfiguration implements TaskManagerRuntimeInfo {
 
 	public TaskManagerConfiguration(
 		boolean cflManDeactivated,
+		boolean mitosCheckpointingEnabled,
+		int mitosCheckpointInterval,
+		String mitosCheckpointDir,
 		int numberSlots,
 		String[] tmpDirectories,
 		Time timeout,
@@ -92,6 +98,9 @@ public class TaskManagerConfiguration implements TaskManagerRuntimeInfo {
 		@Nullable String taskManagerStdoutPath) {
 
 		this.cflManDeactivated = cflManDeactivated;
+		this.mitosCheckpointingEnabled = mitosCheckpointingEnabled;
+		this.mitosCheckpointInterval = mitosCheckpointInterval;
+		this.mitosCheckpointDir = mitosCheckpointDir;
 		this.numberSlots = numberSlots;
 		this.tmpDirectories = Preconditions.checkNotNull(tmpDirectories);
 		this.timeout = Preconditions.checkNotNull(timeout);
@@ -174,6 +183,13 @@ public class TaskManagerConfiguration implements TaskManagerRuntimeInfo {
 		int numberSlots = configuration.getInteger(TaskManagerOptions.NUM_TASK_SLOTS, 1);
 
 		boolean cflManDeactivated = configuration.getBoolean("cflManDeactivated", false);
+		boolean mitosCheckpointingEnabled = configuration.getBoolean("mitosCheckpointingEnabled", false);
+		int mitosCheckpointInterval = configuration.getInteger("mitosCheckpointInterval", 10);
+		String mitosCheckpointDir = configuration.getString("mitosCheckpointDir", null);
+		if (mitosCheckpointDir == null && mitosCheckpointingEnabled) {
+			throw new RuntimeException("mitosCheckpointDir not configured, but mitosCheckpointingEnabled in flink-conf.yaml. " +
+					"Note: it is possible to set mitosCheckpointingEnabled from the main method, in which case mitosCheckpointDir will assume a local dir as a default value.");
+		}
 
 		if (numberSlots == -1) {
 			numberSlots = 1;
@@ -271,6 +287,9 @@ public class TaskManagerConfiguration implements TaskManagerRuntimeInfo {
 
 		return new TaskManagerConfiguration(
 			cflManDeactivated,
+			mitosCheckpointingEnabled,
+			mitosCheckpointInterval,
+			mitosCheckpointDir,
 			numberSlots,
 			tmpDirPaths,
 			timeout,

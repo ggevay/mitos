@@ -67,7 +67,7 @@ public class CFAwareFileSourceParaReader<OT, IS extends InputSplit>
             }
 
         } catch (IOException e1) {
-            throw new RuntimeException();
+            throw new RuntimeException(e1);
         }
     }
 

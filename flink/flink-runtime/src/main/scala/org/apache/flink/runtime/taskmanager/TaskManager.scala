@@ -228,24 +228,26 @@ class TaskManager(
         allHosts = scala.io.Source.fromFile(confDir + "/slaves").getLines().toArray
         assert(!allHosts.contains(""))
         //val hostsExceptMe = allHosts.filter(s => s != hostName)
-        cflManager = new CFLManager(this, allHosts, allHosts.head == hostName)
+        cflManager = new CFLManager(this, allHosts, allHosts.head == hostName,
+          config.mitosCheckpointingEnabled, config.mitosCheckpointInterval, config.mitosCheckpointDir)
 
         if (!allHosts.contains(hostName)) {
           throw new RuntimeException(
             "A slaves fajlban a 'hostname' altal visszaadott neveknek kell lenniuk")
         }
-        cflManager.tmId = allHosts.indexOf(hostName).asInstanceOf[Byte]
-        cflManager.numAllSlots = allHosts.length * numberOfSlots
-        cflManager.numTaskSlotsPerTm = numberOfSlots
+        //cflManager.tmId = allHosts.indexOf(hostName).asInstanceOf[Byte]
+        //cflManager.numAllSlots = allHosts.length * numberOfSlots
+        //cflManager.numTaskSlotsPerTm = numberOfSlots
       } else {
         //local execution
 
         allHosts = Array("localhost")
 
-        cflManager = new CFLManager(this, allHosts, true)
-        cflManager.tmId = 0
-        cflManager.numAllSlots = numberOfSlots
-        cflManager.numTaskSlotsPerTm = numberOfSlots
+        cflManager = new CFLManager(this, allHosts, true,
+          config.mitosCheckpointingEnabled, config.mitosCheckpointInterval, config.mitosCheckpointDir)
+        //cflManager.tmId = 0
+        //cflManager.numAllSlots = numberOfSlots
+        //cflManager.numTaskSlotsPerTm = numberOfSlots
 
         //tmp teszt:
         //CFLManager.create(Array[String]("localhost"))
